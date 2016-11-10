@@ -1,0 +1,23 @@
+{
+  "name": "yelpcamp v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanRaab/webdevBootcamp-YelpCamp.git"
+  },
+  "author": "b3l914n",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephanRaab/webdevBootcamp-YelpCamp/issues"
+  },
+  "homepage": "https://github.com/StephanRaab/webdevBootcamp-YelpCamp#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}
