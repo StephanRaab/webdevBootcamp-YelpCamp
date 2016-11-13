@@ -9,9 +9,13 @@ app.get("/", function(req, res){
 });
 
 var campgrounds = [
-    {name:"Salmon Creek", image:"http://www.fillmurray.com/50/50"},
-    {name:"Granite Hill", image:"http://www.fillmurray.com/50/50"},
-    {name:"Mountain Goats", image:"http://www.fillmurray.com/50/50"}
+    {name:"Salmon Creek", image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-12.jpg.653x0_q80_crop-smart.jpg"},
+    {name:"Granite Hill", image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-1.jpg.838x0_q80.jpg"},
+    {name:"Mountain Goats", image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-2.jpg.838x0_q80.jpg"},
+    {name:"Misty Shore", image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-4.jpg.838x0_q80.jpg"},
+    {name:"Blue Forest", image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-3.jpg.838x0_q80.jpg"},
+    {name:"The Gorge", image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-10.jpg.838x0_q80.jpg"},
+    {name:"Lake Placid", image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-9.jpg.838x0_q80.jpg"}
   ]
 
 app.get("/campgrounds", function(req, res){
