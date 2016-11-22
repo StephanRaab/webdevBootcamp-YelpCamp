@@ -27,3 +27,11 @@
   + Setup campground model
   + use campground model inside of routes
 
+### November 18 - 20
++ Codeschool Javascript Classes
+  + Javascript Roadtrip 1
+  + Javascript Roadtrip 2
+  + Javascript Roadtrip 3
+  + ES2015
+  + Javascript Best Practices
+
