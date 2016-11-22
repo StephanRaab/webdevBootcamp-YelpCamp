@@ -17,21 +17,6 @@ var campgroundSchema = new mongoose.Schema({
 
 var Campground = mongoose.model("Campground", campgroundSchema);
 
-//Campground.create(
-//    { 
-//      name:"Granite Hill",
-//      image:"https://media.mnn.com/assets/images/2015/09/tents-at-night-1.jpg.838x0_q80.jpg"
-//
-//    }, function(err, campground){
-//      if(err) {
-//        console.log(err);
-//      } else {
-//        console.log("Newly created campground");
-//       console.log(campground);
-//      }
-//    });
-
-
 //https://media.mnn.com/assets/images/2015/09/tents-at-night-12.jpg.653x0_q80_crop-smart.jpg
 //https://media.mnn.com/assets/images/2015/09/tents-at-night-1.jpg.838x0_q80.jpg"
 //https://media.mnn.com/assets/images/2015/09/tents-at-night-2.jpg.838x0_q80.jpg"
