@@ -41,14 +41,20 @@
 + db.*collectionName*.drop() --> will remove all data from that collection
 + RESTful routes
 
-|   name  |     url   |     verb   |    description|
-|---------|-----------|------------|---------------|
-| INDEX   | /dogs     |  GET       |   Display a list of ALL dogs|
-| NEW     | /dogs/new |  GET       |   Displays form to make new dog|
-| CREATE  | /dogs/    |  POST      |   Add new dog to DB|
-| SHOW    | /dogs/:id |  GET       |   Shows info about ONE dog|
+..|   name  |     url   |     verb   |    description|
+..|---------|-----------|------------|---------------|
+..| INDEX   | /dogs     |  GET       | Display a list of ALL dogs|
+..| NEW     | /dogs/new |  GET       | Displays form to make new dog|
+..| CREATE  | /dogs/    |  POST      | Add new dog to DB|
+..| SHOW    | /dogs/:id |  GET       | Shows info about ONE dog|
+..| EDIT    | /dogs/:id/edit | GET   | Show edit form for ONE dog|
+..| UPDATE  | /dogs/:id | PUT        | Update a particular dog, then redirect somewhere else |
+..| DESTROY | /dogs/:id | DELETE     | Delete a particular dog, then redirect somewhere else |
 
 + New Mongoose Method "findById(id, callback)"
 + Added description option to the new form
 + Tied mongo id to the "show more" button url
 + Successfully created a SHOW ROUTE
+
+#### **REST** = Representational State Transfer
++ A way of mapping HTTP routes and CRUD
