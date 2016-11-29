@@ -21,17 +21,28 @@
   + Mongoose Model --> ``` var Foo = mongoose.model("Foo", barSchema);
   + ODM --> Object Data Mapper
 
-
 ### November 15
-+ Connecting Mongoose to yelpcamp
-  + Setup campground model
-  + use campground model inside of routes
++ Connecting Mongoose to Yelpcamp
+  + Setup Campground Model
+  + Use campground model inside of routes
 
-### November 18 - 20
+### November 18-26
 + Codeschool Javascript Classes
   + Javascript Roadtrip 1
   + Javascript Roadtrip 2
   + Javascript Roadtrip 3
   + ES2015
   + Javascript Best Practices
+  + Try jQuery
+  + jQuery: The Return Flight
+  + Try SQL
 
+### November 28
++ db.*collectionName*.drop() --> will remove all data from that collection
++ RESTful routes
+  + name       url        verb       description
+  + =======================================================
+  1 INDEX  | /dogs     |  GET  |   Display a list of ALL dogs
+  2 NEW    | /dogs/new |  GET  |   Displays form to make new dog
+  3 CREATE | /dogs/    |  POST |   Add new dog to DB
+  4 SHOW   | /dogs/:id |  GET  |   Shows info about ONE dog

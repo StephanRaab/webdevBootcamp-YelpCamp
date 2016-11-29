@@ -9,10 +9,11 @@ app.get("/", function(req, res){
   res.render("landing.ejs");
 });
 
-//Schema setup
+//SCHEMA SETUP
 var campgroundSchema = new mongoose.Schema({
   name: String,
-  image: String
+  image: String,
+  description: String
 });
 
 var Campground = mongoose.model("Campground", campgroundSchema);
@@ -25,6 +26,7 @@ var Campground = mongoose.model("Campground", campgroundSchema);
 //https://media.mnn.com/assets/images/2015/09/tents-at-night-10.jpg.838x0_q80.jpg"
 //https://media.mnn.com/assets/images/2015/09/tents-at-night-9.jpg.838x0_q80.jpg"
 
+//INDEX ROUTE - Show all campground
 app.get("/campgrounds", function(req, res){
   //get all campgrounds from db
   Campground.find({}, function(err, allCampgrounds){
@@ -36,11 +38,13 @@ app.get("/campgrounds", function(req, res){
   });
 });
 
+//CREATE ROUTE - Add new campground to database
 app.post("/campgrounds", function(req, res){
   //get data from form
   var name = req.body.name;
   var image = req.body.image;
-  var newCampground = {name: name, image: image};
+  var description = req.body.description;
+  var newCampground = {name: name, image: image, description: description};
   //create new campground and push to database
   Campground.create(newCampground, function(err, newlyCreated){
     if (err) {
@@ -52,9 +56,17 @@ app.post("/campgrounds", function(req, res){
   })
 });
 
+//NEW ROUTE - Show form to create new campground
 app.get("/campgrounds/new", function(req, res){
   res.render("new.ejs");
 })
+
+//SHOW ROUTE
+app.get("/campgrounds/:id", function(req, res){
+  //find the campground with provided ID
+  //render show template with that campground
+  res.send("This will be the show page!")
+});
 
 app.listen(3000, function(){
   console.log("Yelpcamp v2 server launched on localhost:3000");
