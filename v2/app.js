@@ -33,7 +33,7 @@ app.get("/campgrounds", function(req, res){
     if (err) {
       console.log(err);
     } else {
-      res.render("campgrounds.ejs", {campgrounds:allCampgrounds});
+      res.render("index.ejs", {campgrounds:allCampgrounds});
     }
   });
 });
@@ -61,11 +61,18 @@ app.get("/campgrounds/new", function(req, res){
   res.render("new.ejs");
 })
 
-//SHOW ROUTE
+//SHOW ROUTE - Shows more info about one campground
 app.get("/campgrounds/:id", function(req, res){
   //find the campground with provided ID
-  //render show template with that campground
-  res.send("This will be the show page!")
+  Campground.findById(req.params.id, function(err, foundCampground){
+    if(err){
+      console.log(err)
+    } else {
+      //render show template with that campground
+      res.render("show.ejs", {campground: foundCampground})
+    }
+  });
+  req.param.id
 });
 
 app.listen(3000, function(){

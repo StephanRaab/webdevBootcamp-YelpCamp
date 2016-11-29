@@ -40,9 +40,13 @@
 ### November 28
 + db.*collectionName*.drop() --> will remove all data from that collection
 + RESTful routes
-  +   name       url        verb       description
-  + =======================================================
-  1. INDEX  | /dogs     |  GET  |   Display a list of ALL dogs
-  2. NEW    | /dogs/new |  GET  |   Displays form to make new dog
-  3. CREATE | /dogs/    |  POST |   Add new dog to DB
-  4. SHOW   | /dogs/:id |  GET  |   Shows info about ONE dog
+  |   name  |     url   |     verb   |    description|
+  |--------_|-----------|------------|---------------|
+  | INDEX  | /dogs     |  GET  |   Display a list of ALL dogs|
+  | NEW    | /dogs/new |  GET  |   Displays form to make new dog|
+  | CREATE | /dogs/    |  POST |   Add new dog to DB|
+  | SHOW   | /dogs/:id |  GET  |   Shows info about ONE dog|
++ New Mongoose Method "findById(id, callback)"
++ Added description option to the new form
++ Tied mongo id to the "show more" button url
++ Successfully created a SHOW ROUTE
