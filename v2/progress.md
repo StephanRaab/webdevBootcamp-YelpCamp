@@ -40,9 +40,9 @@
 ### November 28
 + db.*collectionName*.drop() --> will remove all data from that collection
 + RESTful routes
-  + name       url        verb       description
+  +   name       url        verb       description
   + =======================================================
-  1 INDEX  | /dogs     |  GET  |   Display a list of ALL dogs
-  2 NEW    | /dogs/new |  GET  |   Displays form to make new dog
-  3 CREATE | /dogs/    |  POST |   Add new dog to DB
-  4 SHOW   | /dogs/:id |  GET  |   Shows info about ONE dog
+  1. INDEX  | /dogs     |  GET  |   Display a list of ALL dogs
+  2. NEW    | /dogs/new |  GET  |   Displays form to make new dog
+  3. CREATE | /dogs/    |  POST |   Add new dog to DB
+  4. SHOW   | /dogs/:id |  GET  |   Shows info about ONE dog
